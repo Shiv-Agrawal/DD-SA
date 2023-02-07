@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Username</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="login.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #6495ED;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body style="overflow:hidden;" onload="load()">
+    <center>
+        <table>
+            <tr class="headlogo">
+                <td><img src="logo.png" class="logo"></td>
+                <td>
+                    <h2 class="heading">Chat To Study</h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="username.html">Chat Rooms</a></li>
+        <li style="float:right"><a href="review.html">Review</a></li>
+    </ul>
+    <br>
+    <center>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div"
+            style="margin-top: 150px; background-color: #6495ED;">
+            <div class="form-group" style="height: 125px; padding-top: 50px;">
+                <label>User Name:</label>
+                <input class="form-control" placeholder="Type your name" id="nameInput">
+            </div>
+            <button id="login_button" class="btn btn-primary" onclick="login()"
+                style="background-color: white; color: black; font-family: Georgia;">Go To Chat Rooms</button>
+            <br><br>
+        </div>
+    </center>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(186, 243, 186), rgb(249, 199, 207));
+            height: 728px;
+        }
+
+
+        .logo {
+            height: 150px;
+            width: 250px;
+        }
+
+        .heading {
+            font-family: Georgia;
+        }
+    </style>
+</body>
+
+</html>

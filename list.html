@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>List of Chat Rooms</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Sniglet:wght@400&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #6495ED;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body onload="load()">
+    <div class="container">
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logOut()">Logout</button>
+        <center>
+            <table>
+                <tr class="headlogo">
+                    <td><img src="logo.png" class="logo"></td>
+                    <td>
+                        <h2 class="heading">Chat To Study</h2>
+                    </td>
+                </tr>
+            </table> 
+            <h3 class="color_white" id="welcome" style="font-family: 'Sniglet'; color: black;"></h3>
+            <h4 class="color_white" style="font-family: 'Sniglet'; color: black;">Join a room to get help for a subject
+            </h4><bR>
+            <div id="output" style="background-color: #6495ED;">
+                <div class='room_name' id="math" onclick='redirectToRoom(this.id)'>Mathematics</div>
+                <hr>
+                <div class='room_name' id="science" onclick='redirectToRoom(this.id)'>Integrated Science</div>
+                <hr>
+                <div class='room_name' id="humanities" onclick='redirectToRoom(this.id)'>Integrated Humanities</div>
+                <hr>
+                <div class='room_name' id="la" onclick='redirectToRoom(this.id)'>Language Acquisition</div>
+                <hr>
+                <div class='room_name' id="ll" onclick='redirectToRoom(this.id)'>Language & Literature</div>
+            </div>
+        </center>
+    </div>
+    <script src="list.js"></script>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(186, 243, 186), rgb(249, 199, 207));
+            height: 728px;
+        }
+
+
+        .logo {
+            height: 150px;
+            width: 250px;
+        }
+
+        .heading {
+            font-family: Georgia;
+        }
+    </style>
+</body>
+
+</html>

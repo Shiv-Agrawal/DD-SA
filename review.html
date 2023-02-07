@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #6495ED;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+            body {
+                background-image: linear-gradient(rgb(186, 243, 186), rgb(249, 199, 207));
+                height: 728px;
+            }
+    
+    
+            .logo {
+                height: 150px;
+                width: 250px;
+            }
+    
+            .heading {
+                font-family: Georgia;
+            }
+    
+            .question {
+                color: white;
+                font-family: Sniglet;
+            }
+    
+            .outerbox {
+                color: #6495ED;
+                height: 300px;
+                width: 500px;
+            }
+    
+            .table {
+                border: 2px solid black;
+                border-radius: 50px;
+                padding: 45px;
+                width: 600px;
+                background-color: #6495ED;
+            }
+    
+            .answer {
+                height: 20px;
+                font-family: Georgia;
+                border-radius: 5px;
+                width: 350px;
+            }
+    
+            .submit {
+                height: 30px;
+                border-radius: 5px;
+                width: 350px;
+                font-family: Sniglet;
+            }
+            </style>
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr class="headlogo">
+                <td><img src="logo.png" class="logo"></td>
+                <td>
+                    <h2 class="heading">Chat To Study</h2>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="username.html">Chat Rooms</a></li>
+        <li style="float:right"><a href="review.html">Review</a></li>
+    </ul>
+    <br>
+    <center>
+        <div class="outerbox">
+            <table class="outertable">
+                <tr>
+                    <td class="table">
+                        <form>
+                            <label class="question">How do you like the aesthetics of the website?</label><br>
+                            <input type="text" class="answer" placeholder="Type your answer here:" id="aesthetics"><br><br>
+                            <label class="question">Do you find that the website is useful to you?</label><br>
+                            <input type="text" class="answer" placeholder="Type your anser here:" id="useful"><br><br>
+                            <label class="question">Will you recommend this website to your peers?</label><br>
+                            <input type="text" class="answer" placeholder="Type your anser here:"
+                                id="recommend"><br><br>
+                            <label class="question">Did you face any difficulty while using the website?</label><br>
+                            <input type="text" class="answer" placeholder="Type your anser here:"
+                                id="difficulty"><br><br>
+                            <button type="submit" class="submit" onclick="fillForm()">Submit</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <script>
+        function fillForm() {
+           alert("Your views on aesthetics: " + document.getElementById("aesthetics").value + "\n Is the website useful: " + document.getElementById("useful").value+ "\n Will you recommend: " + document.getElementById("recommend").value + "\n Is there any difficulty: " + document.getElementById("difficulty").value)
+        }
+    </script>
+
+</body>
+
+</html>
