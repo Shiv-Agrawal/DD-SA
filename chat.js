@@ -51,7 +51,7 @@ function getData() {
                 Message = message_data["message"];
 
                 name_tag = "<h4><b>" + nam + "</b></h4>";
-                message_tag = "<h4 message_h4>" + Message + "</h4>";
+                message_tag = "<h4 message_h4>" + Message + "</h4><hr>";
 
                 row = name_tag + message_tag;
                 document.getElementById("output").innerHTML += row;
